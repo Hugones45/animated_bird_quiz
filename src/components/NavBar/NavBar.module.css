@@ -1,0 +1,21 @@
+.eagleAndNest {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,
+            rgb(0, 117, 185),
+            rgb(18, 255, 196),
+            rgb(18, 232, 39));
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:link:hover {
+    text-decoration: underline;
+
+}

@@ -1,0 +1,33 @@
+.divContainer {
+    position: relative;
+    height: 100vh;
+    overflow-y: hidden;
+    background: linear-gradient(to right,
+            rgb(207, 232, 246),
+            rgb(196, 243, 231),
+            rgb(191, 240, 196));
+}
+
+.holdHere {
+    cursor: grab;
+    color: crimson;
+}
+
+.holdHere:active {
+    cursor: grabbing;
+}
+
+.theEagleFly {
+    scale: '8';
+    position: "absolute";
+    top: 100px;
+    right: 700px
+}
+
+
+.theTree {
+    position: relative;
+    left: 1000px;
+    top: 430px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,26 @@
+.firsModal1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+}
+
+.modalContainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #000;
+    width: 1000px;
+    max-width: 1000px;
+    min-width: 500px;
+    border-radius: 15px;
+
+}
+
+.alternativeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
