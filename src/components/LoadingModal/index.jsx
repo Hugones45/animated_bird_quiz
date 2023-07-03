@@ -25,23 +25,20 @@ export const LoadingModal = () => {
     }
 
     return (
-        <div style={{ display: 'flex', gap: '80px' }}>
+        <div className={styles.loaderContainer}>
             <motion.div
-                className={styles.loader}
                 variants={loaderVariants}
                 animate='animationOne'
             >
                 <GiHummingbird style={{ scale: '8' }} />
             </motion.div>
             <motion.div
-                className={styles.loader}
                 variants={loaderVariantsOposite}
                 animate='animationOneOposite'
             >
                 <GiNestBirds style={{ scale: '8' }} />
             </motion.div>
             <motion.div
-                className={styles.loader}
                 variants={loaderVariants}
                 animate='animationOne'
             >
