@@ -50,15 +50,16 @@ export const FinalScore = ({ total, restartQuiz, catchBird }) => {
         <div className={styles.finalScoreSet}>
 
             <div className={styles.scoreContainer}>
-                <div >
+                <div>
                     <img className={styles.birdsImgResults} src={findBird(catchBird)} />
                 </div>
+                <div className={styles.quizScore}>
+                    <div>
+                        <h2>Sua pontuação foi: {total}</h2>
+                    </div>
 
-                <div>
-                    <h2>Sua pontuação foi: {total}</h2>
+                    <div>{restartQuiz}</div>
                 </div>
-
-                <div>{restartQuiz}</div>
             </div>
 
         </div >

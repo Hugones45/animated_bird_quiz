@@ -91,26 +91,31 @@ export const QuestionPages = () => {
                     {!loadingQuestion && <motion.div
                         initial={{ x: '-100vw' }}
                         animate={{ x: 0 }}
-                        className={styles.firsModal1}>
+                        className={styles.firsModal1}
+                    >
                         <div className={styles.modalContainer1}>
-                            <div>
-                                <div>
+
+                            <div className={styles.modalContainer}>
+
+                                <div className={styles.modalQuestionsTitle1}>
                                     <h2>{firstPage && firstPage.theQuestion}</h2>
                                 </div>
 
                                 <div>
                                     {firstPage && firstPage.perguntas.map((item, index) =>
                                         <div key={index} className={styles.alternativeContainer}>
-                                            <input
-                                                type="radio" name="inputQuestions" onClick={() => responseLogic(item.valueResponse)} />
-                                            <h2 key={index}>{item.alternativa}</h2>
+                                            <div>
+                                                <input
+                                                    type="radio" name="inputQuestions" onClick={() => responseLogic(item.valueResponse)} />
+                                            </div>
+
+                                            <h2 className={styles.modalOptions} key={index}>{item.alternativa}</h2>
                                         </div>
                                     )}
                                 </div>
 
-                                <div>
+                                <div className={styles.modalQuestionsButton1}>
                                     <button disabled={!toggle} onClick={() => counterAmountOfQuestions()}>Enviar</button>
-                                    <h2>{theTotal}</h2>
                                 </div>
                             </div>
                         </div>
@@ -130,11 +135,10 @@ export const QuestionPages = () => {
                                         type="radio"
                                         name="inputQuestions"
                                         onClick={() => responseLogic(item.valueResponse)} />
-                                    <h2>{item.alternativa}</h2>
+                                    <h2 className={styles.modalOptions}>{item.alternativa}</h2>
                                 </div>
                             )}
                             button={<button disabled={!toggle} onClick={() => counterAmountOfQuestions()}>Enviar</button>}
-                            total={<h2>{theTotal}</h2>}
                         />}
 
                         {!loadingQuestion && pickQuestion === 7 && <FinalScore

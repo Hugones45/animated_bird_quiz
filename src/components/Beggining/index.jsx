@@ -5,6 +5,19 @@ import styles from "./Beggining.module.css"
 
 export const Beggining = () => {
 
+    const loaderVariants = {
+        animationOne: {
+            x: [0, 1050],
+            y: [0, -150],
+            transition: {
+                duration: 4,
+                repeatType: "mirror",
+                repeat: Infinity,
+            }
+        }
+    }
+
+
     const navigate = useNavigate()
 
     const handleDragEnd = (event) => {
@@ -25,6 +38,8 @@ export const Beggining = () => {
         <div
             className={styles.divContainer}>
             <motion.div
+                variants={loaderVariants}
+                animate='animationOne'
                 drag
                 dragConstraints={{ left: 30, top: 1, right: 1000, bottom: 1 }}
                 dragElastic={0.9}
@@ -45,3 +60,6 @@ export const Beggining = () => {
         </div>
     );
 };
+
+
+

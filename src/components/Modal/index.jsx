@@ -12,16 +12,16 @@ export const Modal = ({ questions, options, button, total }) => {
             <div className={styles.modalContainer}>
 
                 <div>
-                    <div>
-                        <h2>{questions}</h2>
+                    <div className={styles.modalQuestionsTitle}>
+                        <h2 >{questions}</h2>
                     </div>
 
                     <div >
                         {options}
                     </div>
-                    <div>
+
+                    <div className={styles.modalQuestionsButton}>
                         {button}
-                        {total}
                     </div>
                 </div>
 

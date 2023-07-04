@@ -2,66 +2,66 @@
     "Questions": [
         {
             "id": 1,
-            "theQuestion": "pegunta1",
+            "theQuestion": "1 – What are birds?",
             "perguntas": [
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Birds are descendants of dinosaurs, unique animals that have their own classification and distinct characteristics.",
                     "valueResponse": true
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Birds are dinosaurs and, consequently, they are also reptiles.",
                     "valueResponse": false
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Birds descend from a mysterious group of animals that disappeared a few million years after the extinction of dinosaurs.",
                     "valueResponse": false
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "The first birds emerged in the Jurassic period from animals that also gave rise to pterosaurs.",
                     "valueResponse": false
                 }
             ]
         },
         {
             "id": 2,
-            "theQuestion": "pegunta2",
+            "theQuestion": "2 – O que são as aves?",
             "perguntas": [
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Aves são descendentes dos dinossauros, animais únicos que possuem classificação própria e características singulares.",
                     "valueResponse": true
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Aves são dinossauros e por consequência também são repteis.",
                     "valueResponse": false
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Aves descendem de um grupo misterioso de animais que desapareceu muito antes dos dinossauros serem extintos.",
                     "valueResponse": false
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "As primeiras aves surgiram no período jurássico de animais que também deram origem aos pterossauros.",
                     "valueResponse": false
                 }
             ]
         },
         {
             "id": 3,
-            "theQuestion": "pegunta3",
+            "theQuestion": "3 – Qual das aves abaixo é descendente das pre-historicas aves do terror?",
             "perguntas": [
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Todas as espécies de águias.",
                     "valueResponse": true
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Galinhas e patos.",
                     "valueResponse": false
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Casuares e Avestruzes.",
                     "valueResponse": false
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Sariema.",
                     "valueResponse": false
                 }
             ]

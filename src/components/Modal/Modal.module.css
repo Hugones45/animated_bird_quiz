@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 80px;
+    top: 30px;
 }
 
 .modalContainer {
@@ -15,4 +15,22 @@
     max-width: 1000px;
     min-width: 500px;
     border-radius: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #fff;
+}
+
+.modalQuestionsTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalQuestionsButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
 }
