@@ -6,11 +6,11 @@
             "perguntas": [
                 {
                     "alternativa": "Birds are descendants of dinosaurs, unique animals that have their own classification and distinct characteristics.",
-                    "valueResponse": true
+                    "valueResponse": false
                 },
                 {
                     "alternativa": "Birds are dinosaurs and, consequently, they are also reptiles.",
-                    "valueResponse": false
+                    "valueResponse": true
                 },
                 {
                     "alternativa": "Birds descend from a mysterious group of animals that disappeared a few million years after the extinction of dinosaurs.",
@@ -24,111 +24,111 @@
         },
         {
             "id": 2,
-            "theQuestion": "2 – O que são as aves?",
+            "theQuestion": "2 – Are there native crows from Brazil?",
             "perguntas": [
                 {
-                    "alternativa": "Aves são descendentes dos dinossauros, animais únicos que possuem classificação própria e características singulares.",
+                    "alternativa": "Yes, anu-branco and anu-preto are a species of crow found throughout the Brazilian territory.",
+                    "valueResponse": false
+                },
+                {
+                    "alternativa": "Yes, anu-preto are the only representatives of the crow family present in Brazil.",
+                    "valueResponse": false
+                },
+                {
+                    "alternativa": "No, there is no native species of crow from Brazilian lands.",
+                    "valueResponse": false
+                },
+                {
+                    "alternativa": "Yes, jays, also known as Cyanocorax (which means blue crow), have native species from Brazil.",
                     "valueResponse": true
-                },
-                {
-                    "alternativa": "Aves são dinossauros e por consequência também são repteis.",
-                    "valueResponse": false
-                },
-                {
-                    "alternativa": "Aves descendem de um grupo misterioso de animais que desapareceu muito antes dos dinossauros serem extintos.",
-                    "valueResponse": false
-                },
-                {
-                    "alternativa": "As primeiras aves surgiram no período jurássico de animais que também deram origem aos pterossauros.",
-                    "valueResponse": false
                 }
             ]
         },
         {
             "id": 3,
-            "theQuestion": "3 – Qual das aves abaixo é descendente das pre-historicas aves do terror?",
+            "theQuestion": "3 – Which of the birds below is a nearest living relative of the prehistoric terror birds?",
             "perguntas": [
                 {
-                    "alternativa": "Todas as espécies de águias.",
+                    "alternativa": "All species of eagles.",
+                    "valueResponse": false
+                },
+                {
+                    "alternativa": "Chickens and ducks.",
+                    "valueResponse": false
+                },
+                {
+                    "alternativa": "Seriema.",
                     "valueResponse": true
                 },
                 {
-                    "alternativa": "Galinhas e patos.",
-                    "valueResponse": false
-                },
-                {
-                    "alternativa": "Casuares e Avestruzes.",
-                    "valueResponse": false
-                },
-                {
-                    "alternativa": "Sariema.",
+                    "alternativa": "Cassowaries and ostriches.",
                     "valueResponse": false
                 }
             ]
         },
         {
             "id": 4,
-            "theQuestion": "pegunta4",
+            "theQuestion": "4 – In Egyptian mythology, the bennu was a sacred bird that later became popularly known as the phoenix thanks to the Greeks. The phoenix is represented as an eagle, but in the original myth, the bennu was a different bird.",
             "perguntas": [
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "A heron",
                     "valueResponse": true
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "A dove",
                     "valueResponse": false
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "A pheasant",
                     "valueResponse": false
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "A peacock",
                     "valueResponse": false
                 }
             ]
         },
         {
             "id": 5,
-            "theQuestion": "pegunta5",
+            "theQuestion": "5 – Indicate bellow the only group where all the bird species are incapable of flight.",
             "perguntas": [
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Chickens, ducks, and mallards.",
+                    "valueResponse": false
+                },
+                {
+                    "alternativa": "Penguins, rheas, and the parrot species known as kakapo.",
                     "valueResponse": true
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Chickens, ostriches, and seriemas.",
                     "valueResponse": false
                 },
                 {
-                    "alternativa": "blabalbal",
-                    "valueResponse": false
-                },
-                {
-                    "alternativa": "blabalbal",
+                    "alternativa": "Nightjars, partridges, and geese.",
                     "valueResponse": false
                 }
             ]
         },
         {
             "id": 6,
-            "theQuestion": "pegunta6",
+            "theQuestion": "6 – What is the highest altitude at which a bird has been observed flying?",
             "perguntas": [
                 {
-                    "alternativa": "blabalbal",
-                    "valueResponse": true
-                },
-                {
-                    "alternativa": "blabalbaldddddddddddddddddddddddddddd",
+                    "alternativa": "About 400 meters.",
                     "valueResponse": false
                 },
                 {
-                    "alternativa": "blabalbal",
+                    "alternativa": "About 2500 meters.",
+                    "valueResponse": false
+                },
+                {
+                    "alternativa": "About 5000 meters.",
                     "valueResponse": true
                 },
                 {
-                    "alternativa": "blabalbal",
-                    "valueResponse": false
+                    "alternativa": "About 6000 meters.",
+                    "valueResponse": true
                 }
             ]
         }

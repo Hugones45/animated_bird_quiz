@@ -1,0 +1,51 @@
+.birdsButton {
+    font-weight: bold;
+    background-color: azure;
+    padding: 10px 40px;
+    border: none;
+    background-color: rgb(255, 96, 57);
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 170px;
+    transition: all 0.5s;
+}
+
+.birdsButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.birdsButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.birdsButton:hover span {
+    padding-right: 25px;
+}
+
+.birdsButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.disableButton {
+    font-weight: bold;
+    background-color: azure;
+    padding: 10px 40px;
+    border: none;
+    background-color: rgb(254, 230, 184);
+    border-radius: 30px;
+    font-size: 20px;
+    width: 170px;
+    transition: all 0.5s;
+    color: #fff;
+}

@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Modal } from "../Modal"
 import { LoadingModal } from "../LoadingModal"
 import { FinalScore } from "../FinalScore"
+import { ButtonBirds } from "../ButtonBirds"
 
 import styles from "./QuestionPages.module.css"
 
@@ -34,13 +35,13 @@ export const QuestionPages = () => {
         if (theTotal < 150) {
             setTheTotal(theTotal + response)
         }
-        setTimeout(() => {
-            const findID = questions.find((item) => Number(item.id) === pickQuestion)
-            if (findID) {
-                setQuestionOfTheMoment(findID)
-                return
-            }
-        }, 500)
+
+        const findID = questions.find((item) => Number(item.id) === pickQuestion)
+        if (findID) {
+            setQuestionOfTheMoment(findID)
+            return
+        }
+
     }, [pickQuestion])
 
     const [firstPage, setFirstPage] = useState(null)
@@ -48,6 +49,10 @@ export const QuestionPages = () => {
 
     useEffect(() => {
         setFirstPage(findIDOne)
+        setLoadingQuestion(true)
+        setTimeout(() => {
+            setLoadingQuestion(false)
+        }, 2000)
 
     }, [findIDOne, pickQuestion])
 
@@ -57,7 +62,7 @@ export const QuestionPages = () => {
 
         setTimeout(() => {
             setLoadingQuestion(false)
-        }, 2000)
+        }, 1000)
     }
 
     const counterAmountOfQuestionsFirstPage = () => {
@@ -68,7 +73,7 @@ export const QuestionPages = () => {
 
         setTimeout(() => {
             setLoadingQuestion(false)
-        }, 2000)
+        }, 1000)
     }
 
     const responseLogic = (value) => {
@@ -115,7 +120,7 @@ export const QuestionPages = () => {
                                 </div>
 
                                 <div className={styles.modalQuestionsButton1}>
-                                    <button disabled={!toggle} onClick={() => counterAmountOfQuestions()}>Enviar</button>
+                                    <ButtonBirds disabled={!toggle} text={'Enviar'} functions={() => counterAmountOfQuestions()} />
                                 </div>
                             </div>
                         </div>
@@ -138,13 +143,14 @@ export const QuestionPages = () => {
                                     <h2 className={styles.modalOptions}>{item.alternativa}</h2>
                                 </div>
                             )}
-                            button={<button disabled={!toggle} onClick={() => counterAmountOfQuestions()}>Enviar</button>}
+                            button={<ButtonBirds disabled={!toggle} text={'Enviar'} functions={() => counterAmountOfQuestions()} />}
                         />}
 
                         {!loadingQuestion && pickQuestion === 7 && <FinalScore
                             catchBird={theTotal}
+                            catchInformation={theTotal}
                             total={theTotal}
-                            restartQuiz={<button onClick={() => counterAmountOfQuestionsFirstPage()}>Recomeçar o Teste!</button>}
+                            restartQuiz={<ButtonBirds disabled={false} styler={'230px'} text={'Restart Quiz!'} functions={() => counterAmountOfQuestionsFirstPage()} />}
                         />}
                     </div>
                 </div>
