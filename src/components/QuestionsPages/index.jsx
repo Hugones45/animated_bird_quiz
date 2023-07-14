@@ -11,7 +11,7 @@ import styles from "./QuestionPages.module.css"
 
 export const QuestionPages = () => {
 
-    const url = "http://localhost:3000/Questions"
+    const url = "https://json-birds.vercel.app/Questions"
 
     const { theTotal, setTheTotal } = useTheTotalContext(0)
     const [response, setResponse] = useState(0)
